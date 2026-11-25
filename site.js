@@ -27,6 +27,9 @@ function updateContact() {
   const model = vehicle.value.trim();
   contactUrl.searchParams.set('text', greeting + (selectedByVisitor ? ' Tenho interesse na ' + rate.selectedOptions[0].textContent + '.' : '') + (model ? ' Meu carro: ' + model : ''));
   contactLink.href = contactUrl.href;
+  const simulation = new URL(contactUrl);
+  simulation.searchParams.set('text', 'Olá! Simulei a ' + rate.selectedOptions[0].textContent + ' no site da Via Clara e gostaria de conversar.');
+  document.querySelector('#sim-contact').href = simulation.href;
 }
 vehicle.addEventListener('input', updateContact);
 rate.addEventListener('change', () => {
