@@ -25,3 +25,23 @@ details p { padding: 0 18px 16px; margin: 0; }
   .btn { transition: background-color 160ms ease, transform 160ms ease; }
   .btn:active { transform: translateY(1px); }
 }
+
+.copy { padding-bottom: clamp(44px, 5vw, 76px); }
+details { transition: border-color .18s ease; }
+details[open] { border-color: #a8b2bf; }
+summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ''; width: 8px; height: 8px; flex: none; margin-right: 4px; border: solid currentColor; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+details[open] summary::after { transform: rotate(225deg); }
+.calc strong { font-variant-numeric: tabular-nums; }
+.calc #net { font-size: 1.35rem; }
+.contact { background: linear-gradient(115deg,#101d2c 48%,#20344a); }
+.vehicle-label { display: block; font-weight: 650; margin: 24px 0 6px; }
+#vehicle { display: block; width: min(100%, 410px); padding: 13px 15px; color: #101c2c; border: 1px solid #aeb8c3; border-radius: 7px; font: inherit; }
+.hint { font-size: .88rem; color: #d1d9e1; }
+@media (prefers-reduced-motion:no-preference) {
+  summary::after, .btn span { transition: transform .22s ease; }
+  .btn:hover span, .btn:focus-visible span { transform: translateX(4px); }
+  @keyframes section-arrive { from { transform: translateY(12px); opacity: .65; } to { transform: translateY(0); opacity: 1; } }
+  .in-view { animation: section-arrive .42s ease-out both; }
+}
