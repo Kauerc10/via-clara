@@ -38,7 +38,7 @@ details[open] summary::after { transform: rotate(225deg); }
 .contact { background: linear-gradient(115deg,#101d2c 48%,#20344a); }
 .vehicle-label { display: block; font-weight: 650; margin: 24px 0 6px; }
 #vehicle { display: block; width: min(100%, 410px); padding: 13px 15px; color: #101c2c; border: 1px solid #aeb8c3; border-radius: 7px; font: inherit; }
-.hint { font-size: .88rem; color: #d1d9e1; }
+#vehicle + .btn { margin-top: 16px; }
 @media (prefers-reduced-motion:no-preference) {
   summary::after, .btn span { transition: transform .22s ease; }
   .btn:hover span, .btn:focus-visible span { transform: translateX(4px); }
