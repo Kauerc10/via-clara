@@ -6,20 +6,40 @@
       "source": "/veiculos"
     },
     {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/veiculos/",
+      "source": "/veiculos/"
+    },
+    {
       "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/veiculos/:slug/",
       "source": "/veiculos/:slug"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/veiculos/:slug/",
+      "source": "/veiculos/:slug/"
     },
     {
       "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/",
       "source": "/admin"
     },
     {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/",
+      "source": "/admin/"
+    },
+    {
       "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/veiculos/novo/",
       "source": "/admin/veiculos/novo"
     },
     {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/veiculos/novo/",
+      "source": "/admin/veiculos/novo/"
+    },
+    {
       "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/veiculos/:id/editar/",
       "source": "/admin/veiculos/:id/editar"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/veiculos/:id/editar/",
+      "source": "/admin/veiculos/:id/editar/"
     },
     {
       "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/:asset",
