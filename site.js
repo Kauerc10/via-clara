@@ -38,6 +38,20 @@ rate.addEventListener('change', () => {
 });
 updateContact();
 
+async function loadHighlights() {
+  const section = document.querySelector('#vitrine');
+  if (!section) return;
+  try {
+    const response = await fetch('/api/vitrine/destaques');
+    if (!response.ok) return;
+    const vehicles = await response.json();
+    if (!Array.isArray(vehicles) || !vehicles.length) return;
+    const { renderCard } = await import('/vitrine-render.mjs');
+    section.querySelector('.vehicle-grid').innerHTML = vehicles.map(renderCard).join('');
+    section.hidden = false;
+  } catch { /* The institutional site remains available when inventory is offline. */ }
+}
+loadHighlights();
 if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/veiculos/",
+      "source": "/veiculos"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/veiculos/:slug/",
+      "source": "/veiculos/:slug"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/",
+      "source": "/admin"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/veiculos/novo/",
+      "source": "/admin/veiculos/novo"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/veiculos/:id/editar/",
+      "source": "/admin/veiculos/:id/editar"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/admin/:asset",
+      "source": "/admin/:asset(admin\\.js|admin\\.css)"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/api/config",
+      "source": "/api/config"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/api/admin/:path*",
+      "source": "/api/admin/:path*"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/api/vitrine/destaques",
+      "source": "/api/vitrine/destaques"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/media/:path",
+      "source": "/media/:path"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/sitemap.xml",
+      "source": "/sitemap.xml"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/vitrine.css",
+      "source": "/vitrine.css"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/vitrine-render.mjs",
+      "source": "/vitrine-render.mjs"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/vitrine-catalog.js",
+      "source": "/vitrine-catalog.js"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/vitrine-gallery.js",
+      "source": "/vitrine-gallery.js"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/catalogo-estrada.webp",
+      "source": "/catalogo-estrada.webp"
+    },
+    {
+      "destination": "https://via-clara-vitrine.kaue-ruon.workers.dev/catalogo-estrada-mobile.webp",
+      "source": "/catalogo-estrada-mobile.webp"
+    }
+  ]
+}
